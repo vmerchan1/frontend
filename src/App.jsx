@@ -26,7 +26,7 @@ function AuthForm() {
 
     // Guardamos el token en localStorage
     if (data.session?.access_token) {
-      localStorage.setItem("token", data.session.access_token);
+      localStorage.setItem("token", data.session?.access_token);
       alert("Login correcto, token guardado");
     } else {
       alert("Error al iniciar sesión");
